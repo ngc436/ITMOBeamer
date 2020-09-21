@@ -75,12 +75,12 @@
   \vfill
   \begin{centering}
       \begin{center}
-        \vspace{1cm}
-        \includegraphics[height = 1.5cm]{figs/itmo_logo_blue_en.eps} \\
-        \vspace{1cm}
+        \vspace{0.6cm}
+        \includegraphics[height = 0.9cm]{figs/itmo_logo_horiz_transp_en_updated_2.png} \\
+        \vspace{1.5cm}
 
         \noindent\makebox[\textwidth][c]{%
-        \begin{minipage}{0.9\textwidth}
+        \begin{minipage}{1.5\textwidth}
                 \centering{\bf\Large\inserttitle}
         \end{minipage}}
 
@@ -101,11 +101,39 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% End page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{end page}
+{
+  \itmopolygons{
+  \vbox{}
+  \vfill
+  \begin{centering}
+      \begin{center}
+        \vspace{5.6cm}
+
+        \noindent\makebox[\textwidth][c]{%
+        \begin{minipage}{3.5\textwidth}
+                \centering{\bf\Large{Thank you!}}
+        \end{minipage}}
+        
+    \vspace{0.1cm}
+
+      \end{center}
+  \end{centering}
+  \vfill
+  }
+}
+% \addtocounter{framenumber}{-1}
+\AtEndDocument{\usebeamertemplate{end page}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Frame
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{sidebar right}{}
 \setbeamertemplate{navigation symbols}{}
-\setbeamercolor{section in head/foot}{bg=ITMOblue, fg=ITMOwhite}
+\setbeamercolor{section in head/foot}{bg=ITMOwhite, fg=ITMOblue}
 
 %%% See the beamercolorbox documentation in http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
 %%% The page 126
@@ -114,8 +142,17 @@
 \begin{beamercolorbox}[wd=\paperwidth,dp=7pt,ht=18pt,leftskip=10px,rightskip=10px]{section in head/foot}
   \insertframetitle
   \hfill
-  \raisebox{-1pt}{\includegraphics[height=12pt]{figs/itmo_logo_horiz_blue_en.eps}}
+%   \raisebox{-7pt}{\includegraphics[height=2pt, width=150]{figs/line_slim.eps}}
+%   \raisebox{-15pt}{\includegraphics[height=20pt]{figs/itmo_logo_horiz_white_en.eps}}
 \end{beamercolorbox}
+
+\begin{beamercolorbox}[wd=\paperwidth,dp=7pt,ht=5pt,leftskip=3px,rightskip=10px]{section in head/foot}
+  \hfill
+  \raisebox{8pt}{\includegraphics[height=2pt, width=345]{figs/line_slim.eps}}
+  \raisebox{-2pt}{\includegraphics[height=20pt]{figs/itmo_logo_horiz_white_en.eps}}
+\end{beamercolorbox}
+
+
 }
 
 \logo{\includegraphics[height=1.5cm]{figs/itmo_logo_blue_en.eps}}

@@ -1,2 +1,2 @@
 # ITMOBeamer
-ITMO Template for Beamer
+ITMO up-to-date Template for Beamer
